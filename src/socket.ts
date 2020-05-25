@@ -1,5 +1,5 @@
 
-interface socketEvent {
+interface SocketEvent {
   message: Function,
   open: Function,
   close: Function,
@@ -12,13 +12,13 @@ enum eventType {
   open = 'open'
 }
 
-class socket {
+class Socket {
 
-  opts: socketEvent;
+  opts: SocketEvent;
   connection_url: string;
   socket: WebSocket;
 
-  constructor(opts: socketEvent, connection_url: string) {
+  constructor(opts: SocketEvent, connection_url: string) {
     this.opts = opts;
     this.connection_url = connection_url;
     this.connect();
@@ -78,3 +78,14 @@ class socket {
   }
 
 }
+
+//测试
+
+// const  ops={
+//   message: (e:any)=>{console.log(e)},
+//   open:(e:any)=>{console.log(e)},
+//   close: (e:any)=>{console.log(e)},
+//   error:(e:any)=>{console.log(e)},
+// };
+
+// new Socket(ops,"//im.8591.com.hk/wss?token=7a7eba9366fc55b7f3cfb1258cf32223");

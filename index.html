@@ -4,67 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .page-wd{
-            margin: 0 auto;
-            width: 480px;
-            padding:10px;
-            box-shadow:0 1px 5px rgba(0, 0, 0, .2)
-        }
-        .out-put{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width:100%;
-            height: 50px;
-        }
-        .value{
-            font-size: 30px;
-        }
-        .row{
-            display: flex;
-            margin-top:10px;
-        }
-        .btn-wd{
-            display: flex;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-            height: 50px;
-        }
-        .btn{
-            margin-right: 10px;
-            border-radius: 20px;
-            background: #1882ef;
-            color: #ffffff;
-            font-size:20px;
-            cursor: pointer;
-        }
-        .flex-5{
-            flex:0.5;
-        }
-        .flex1{
-            flex: 1;
-        }
-    </style>
+
 </head>
 <body>
-    <div id="app">
-        <div class="page-wd">
-            <div class="out-put">
-                <span class="value">{{value}}</span>
-            </div>
-
-            <div  v-for="(item,index) in btn_array" class="row">
-                <div v-for="value in item" :style="style_wd(value)">
-                    <div class="btn-wd btn" v-on:click="calculate(value)">{{value}}</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <!-- 引入组件库 -->
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+   <h1>ts版socket</h1>
     <script src="./build/main.js"></script>
 </body>
 </html>
