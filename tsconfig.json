@@ -1,0 +1,28 @@
+{
+   "compilerOptions":{ //配置编译规则
+       "module":"ES2015",//指定生成哪个模块系统代码
+       "target": "es5",
+       "noImplicitAny":true,//在类型隐含any的时候报错
+       "removeComments":true,//删除所有注释，除了以 /!*开头的版权信息。
+       "preserveConstEnums": true,//保留 const和 enum声明。
+       "sourceMap": true,//生成相应的 .map文件。方便调试
+   },
+   "include":["src/**/*"],//编译这个文件夹下面的所有文件
+   "exclude":["node_modules"],//不需要编译的文件夹
+   
+//    "files": [ //等待编译的ts文件
+//     "core.ts",
+//     "sys.ts",
+//     "types.ts",
+//     "scanner.ts",
+//     "parser.ts",
+//     "utilities.ts",
+//     "binder.ts",
+//     "checker.ts",
+//     "emitter.ts",
+//     "program.ts",
+//     "commandLineParser.ts",
+//     "tsc.ts",
+//     "diagnosticInformationMap.generated.ts"
+//    ]
+}
